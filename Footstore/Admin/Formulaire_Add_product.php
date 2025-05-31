@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Handle file upload
     $image_url = '';
     if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
-        $upload_dir = 'uploads/'; // Directory to store uploaded images
+        $upload_dir = '../assets/images'; // Directory to store uploaded images
         if (!is_dir($upload_dir)) {
             mkdir($upload_dir, 0755, true); // Create the directory if it doesn't exist
         }

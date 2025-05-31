@@ -95,7 +95,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             ];
 
             // Redirect to index.html
-            header('Location: index.html');
+            header('Location: index.php');
             exit;
         } catch (PDOException $e) {
             $errors['database'] = 'Database error: ' . $e->getMessage();
